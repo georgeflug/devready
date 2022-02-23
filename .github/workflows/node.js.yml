@@ -35,9 +35,6 @@ jobs:
     needs: build
     if: ${{ github.ref_name == 'main' }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v2
         with:
