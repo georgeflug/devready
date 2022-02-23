@@ -1,0 +1,19 @@
+{
+  "name": "devready",
+  "version": "1.0.0",
+  "description": "Rapid repo onboarding",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgeflug/devready.git"
+  },
+  "author": "Richard White <georgeflug@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georgeflug/devready/issues"
+  },
+  "homepage": "https://github.com/georgeflug/devready#readme"
+}
