@@ -1,3 +1,5 @@
+## [1.1.4](https://github.com/georgeflug/devready/compare/1.1.0...1.1.4) (2022-02-23)
+
 # 1.1.0 (2022-02-23)
 
 
