@@ -53,4 +53,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: npm config set //registry.npmjs.org/:_authToken $NODE_AUTH_TOKEN
       - run: npm ci
-      - run: npm run release
+      - run: npm run release -- --npm.skipChecks
