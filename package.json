@@ -2,9 +2,10 @@
   "name": "devready",
   "version": "1.0.0",
   "description": "Rapid repo onboarding",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "node src/index"
+    "start": "tsc && node dist/index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/georgeflug/devready/issues"
   },
-  "homepage": "https://github.com/georgeflug/devready#readme"
+  "files": [
+    "/dist"
+  ],
+  "homepage": "https://github.com/georgeflug/devready#readme",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
 }
