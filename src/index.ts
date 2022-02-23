@@ -1,5 +1,8 @@
-export function hello(): string {
-  return 'Hello, world!'
-}
+import { DevReadyConfig } from './config'
+import { DevReadyResult } from './result'
 
-console.log(hello())
+export function devready(config: DevReadyConfig): DevReadyResult[] {
+  return config.environmentVariables.map(envVar => ({
+    ok: !!process.env[envVar],
+  }))
+}
