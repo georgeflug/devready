@@ -12,7 +12,7 @@ it('should pass if environment variable is present', () => {
 
     const result = devready(config)
 
-    expect(result).toEqual([{ ok: true }])
+    expect(result).toEqual([expect.objectContaining({ ok: true })])
   } finally {
     delete process.env[envVarName]
   }
@@ -25,5 +25,5 @@ it('should fail if environment variable is missing', () => {
 
   const result = devready(config)
 
-  expect(result).toEqual([{ ok: false }])
+  expect(result).toEqual([expect.objectContaining({ ok: false })])
 })
