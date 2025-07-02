@@ -6,6 +6,12 @@ it('should pass if environment variable is present', () => {
   const envVarName = Chance().word()
   try {
     const config: DevReadyConfig = {
+      checks: [
+        {
+          type: 'environment-variable',
+          // variableName: envVarName,
+        },
+      ],
       environmentVariables: [envVarName],
     }
     process.env[envVarName] = 'doesNotMatter'
@@ -26,6 +32,7 @@ it('should pass if environment variable is present', () => {
 it('should fail if environment variable is missing', () => {
   const envVarName = Chance().word()
   const config: DevReadyConfig = {
+    checks: [],
     environmentVariables: [envVarName],
   }
 
